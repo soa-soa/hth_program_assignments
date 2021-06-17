@@ -18,6 +18,9 @@ city_names.remove("hollywood")
 
 print(city_names)
 
+for city in city_names:
+    print(city)
+# useful to print all the names in a list on a single line
 
 laptop_brands = ["lenovo", "dell", "apple", "hp", "acer", "huawei", "msi", "xiaomi", "samsung", "lg"]
 
