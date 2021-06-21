@@ -42,3 +42,22 @@ def price_difference(food_1, food_2):
 print(total_price("beef", "cheese"))
 print('The price difference of beef and cheese is', '$' +str(price_difference("beef", "cheese")))
 
+# lab 4 step 4
+
+def restock(food_prices, multiplier):
+    food_restock = food_prices[food_prices] * multiplier
+    food_prices[food_prices] = food_restock
+    return food_restock
+
+print(food_restock)
+
+# lab 4 step 5
+
+food_restock("beef", 3)
+
+def clearance_sale(food_prices, discount):
+    sale_price = food_prices[food_1] / discount #using division to find clearance price
+    food_prices[food_1] = sale_price # assigning discount
+    return food_prices
+
+# lab 4 step 6
