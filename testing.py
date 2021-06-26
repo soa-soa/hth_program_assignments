@@ -1,21 +1,24 @@
-# lab 4 step 10
 
-# parameters help make the code reuseable (parameter):
-# (longer names ... shorter names)
+# for loop is for a specific range
+# while loop can go infinitely, you use while if you don't know the amount of loops
 
-city_names = ["oakland", "seattle", "altlanta", "new york city", "memphis", "miami", "los angeles", "new orleans"]
 
-def organize_cities(cities_list):
-    counter = 0
-    for city in cities_list:
-        if(len(cities_list[counter]) > len(cities_list[counter +1])):
-            counter += 1
-        else: 
-            # pop - index value
-            # remove - value
-            cities_list.remove(city)
-            cities_list.append(city)
-            counter += 1
-    return cities_list
-    
-print(organize_cities(city_names))
+the_list = [] # empty list
+
+for i in range(1, 101): # for loop statement left is inclusive, right is exclusive
+    the_list.append(i) # loop argument
+
+counter = 0
+print(the_list) 
+
+counter = 0
+bool = True
+
+while bool:
+
+    counter += 1
+
+    print(counter)
+
+    if counter == 100:
+        bool = False
